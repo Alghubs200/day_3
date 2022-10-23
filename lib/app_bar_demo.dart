@@ -170,6 +170,17 @@ class _AppBarDemoState extends State<AppBarDemo> {
                   label: 'Call',
                   backgroundColor: Colors.purple),
             ]),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+        floatingActionButton: FloatingActionButton(
+          tooltip: 'switch off',
+          elevation: 22,
+          splashColor: Colors.red,
+          backgroundColor: Colors.grey,
+          child: Icon(Icons.settings_power_rounded),
+          onPressed: () {
+            print('FAB button pressed');
+          },
+        ),
         body: _items[_selectedIndex]);
   }
 }
